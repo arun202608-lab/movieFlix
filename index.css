@@ -1,0 +1,371 @@
+body, html {
+    background-color: black;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ }
+ select{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    color: rgb(246, 244, 244);
+    font-weight:700 ;
+    font-family: "Roboto";
+    padding: 6px 12px;
+    border: 1px solid #aaa;
+ }
+ *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .logo-netflix{
+    width: 140px;
+    animation: fade-down 1s ease-in-out;
+ }
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.25) !important;
+ }
+ .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+ }
+ 
+ .netflix-background-container{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("netflix-background-gs7hjuwvv2g0e9fj.jpg");
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    border-bottom: 8px solid #222;
+ }
+ .content-container {
+     padding-top: 100px;
+ }
+
+ /* --- THIS IS THE RESTORED HEADING STYLE --- */
+ .content-container-heading{
+    color: #ffffff;
+    font-size: 3.125rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    transition: 0.5s;
+    animation: fade-up 1s ease-in-out;
+    background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.85);
+ }
+ 
+ /* --- THIS IS THE RESTORED HOVER EFFECT --- */
+ .content-container-heading:hover{
+    -webkit-text-stroke: 3px #fd0404;
+    background: transparent;
+ }
+
+ /*KEYFRAME*/
+ @keyframes fade-down {
+    0%{ opacity: 0; transform: translateY(-20px); }
+    100%{ opacity: 1; transform: translateY(0px); }
+ }
+ @keyframes fade-up {
+    0%{ opacity: 0; transform: translateY(20px); }
+    100%{ opacity: 1; transform: translateY(0px); }
+ }
+ 
+ .content-container-para{
+    color: #ffffff;
+    font-size: 1.625rem;
+    font-weight: 400;
+    animation: fade-up 1s ease-in-out 0.2s;
+    animation-fill-mode: backwards;
+ }
+ .contain-input-details{
+    margin-top: 30px;
+ }
+ .contain-input-details-p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    animation: fade-up 1s ease-in-out 0.4s;
+    animation-fill-mode: backwards;
+    padding: 0 15px;
+ }
+ .rate-style{
+    font-weight: 500;
+ }
+ .email-input{
+     width: 100%;
+     max-width: 380px;
+     height: 60px;
+     padding-left:19px;
+     padding-top:5px ;
+     background-color: rgba(22, 22, 22, 0.7);
+     border-radius: 4px;
+     border: 1px solid #8c8c8c;
+     animation: fade-up 1s ease-in-out 0.6s;
+     animation-fill-mode: backwards;
+ }
+ .email-input-p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #8c8c8c;
+ }
+ .email-input-inputtag{
+     width: 100%;
+     height: 33px;
+     outline: 0;
+     border: 0;
+     background: transparent;
+     color: #ffffff;
+     font-family: sans-serif;
+ }
+ #contain-input-details-start-button{
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.625rem;
+    border-radius: 4px;
+    height: 60px;
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 0 26px;
+    border: none;
+    animation: fade-up 1s ease-in-out 0.8s;
+    animation-fill-mode: backwards;
+    white-space: nowrap;
+ }
+ .product{
+  background-color: #000;
+  padding: 50px 0;
+  border-bottom: 8px solid #222;
+ }
+ 
+ .slider-container {
+    position: relative;
+    padding: 0 4%;
+ }
+
+ .product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+ }
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  .product-card {
+    flex: 0 0 auto;
+    width: 220px;
+    height: 300px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .product-card:hover{
+    transform: scale(1.05);
+  }
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .dis-tag {
+    position: absolute;
+    left: -15px;
+    bottom: -40px;
+    font-size: 100px;
+    -webkit-text-stroke: 5px black;
+    color: #819092;
+    font-weight: bold;
+    z-index: 1;
+  }
+  .product-category, .M_join_heading{
+    background: linear-gradient(to right,rgb(8, 211, 201),rgb(255, 0, 234),red,green);
+    background-clip: text;
+    color: transparent;
+    padding: 0 4%;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+ 
+  .pre-btn, .nxt-btn {
+    
+    width: 2%;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 9;
+    color: white;
+    
+    transition: opacity 0.3s ease;
+    border-color: #1c92d2;
+    border-radius: 3px;
+    box-shadow: rgba(15, 216, 199, 0.35) 0px 5px 15px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 24px;
+   
+  }
+  .slider-container:hover .pre-btn,
+  .slider-container:hover .nxt-btn {
+      opacity: 1;
+  }
+  .pre-btn { left: 0; }
+  .nxt-btn { right: 0; }
+  
+  .card{
+    background-color: #141414;
+    border: 1px solid #303030;
+    transition: transform 0.3s ease;
+  }
+ .card:hover{
+  transform: translateY(-9px);
+  cursor: pointer;
+ }
+ .card-body{
+    padding: 28px;
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7acada, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid rgb(24, 241, 212);
+    border-radius: 4px;
+    box-shadow: rgba(20, 255, 235, 0.932) 0px 5px 15px ;
+ }
+ .card-title{
+    
+   font-size: 1.9rem;
+   font-weight: 700;
+   font-family: sans-serif;
+ }
+ .card-text{
+  color: #111010;
+   font-size: 1rem;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ .card-icon{
+  display: flex;
+  justify-content: flex-end;
+  color: #e50909;
+  padding-top: 15px;
+ 
+ }
+ .accordion-container {
+    max-width: 815px;
+    margin: 30px auto;
+    padding: 0 15px;
+ }
+ .accordion-item {
+    margin-bottom: 8px;
+    border: none;
+ }
+ .accordion-button {
+    background-color: #303030 !important;
+    color: white !important;
+    padding: 24px !important;
+    font-size: 1.625rem !important;
+    box-shadow: none !important;
+ }
+ .accordion-body {
+    background-color: #303030;
+    color: white;
+    font-size: 1.2rem;
+ }
+
+ .email-input-footer{
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  padding: 22px;
+  color: #fff;
+  background-color: rgba(22, 22, 22, 0.7);
+  border-radius: 4px;
+  border: 1px solid #8c8c8c;
+ }
+ .comment-email-start{
+  margin-top:80px;
+  margin-bottom:15px;
+  text-align: center;
+ }
+ .comment-email-start-p{
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 15px;
+ }
+ .email-start .btn {
+     height: 50px;
+     font-size: 1.2rem;
+     padding: 0 20px;
+ }
+ ::placeholder {
+  color: #8c8c8c;
+  opacity: 1;
+  font-size: 1rem;
+ }
+
+/*homepage footer*/
+ .netflix-footer-section{
+  background-color: #000;
+  font-family: sans-serif;
+  padding: 70px 0 20px 0;
+  color: #737373;
+ }
+ .footer-paragraph{
+    margin-bottom: 30px;
+ }
+ .callno, .callno1 {
+    color: #737373;
+    text-decoration: none;
+ }
+ .callno:hover, .callno1:hover {
+    text-decoration: underline;
+ }
+ .footer-paragraph-2{
+    font-size: 0.9rem;
+ }
+
+ /* accordian custom icons */
+ .accordion-button::after {
+    content: "+";
+    font-size: 3rem;
+    font-weight: lighter;
+    background-image: none !important;
+    transform: translateY(-5px);
+ }
+ .accordion-button:not(.collapsed)::after {
+    content: "×";
+    transform: translateY(-5px);
+ }
+ 
+ /* RESPONSIVE MEDIA QUERIES */
+ @media (max-width: 992px) {
+    .content-container-heading { font-size: 2.5rem; }
+    .content-container-para { font-size: 1.25rem; }
+    .M_join_heading, .product-category { font-size: 1.75rem; text-align: center; }
+    #contain-input-details-start-button { font-size: 1.25rem; }
+ }
+
+ @media (max-width: 768px) {
+    .logo-netflix { width: 100px; }
+    .content-container { padding-top: 50px; }
+    .content-container-heading { font-size: 2rem; }
+    .content-container-para { font-size: 1.125rem; }
+    .contain-input-details-p { font-size: 1rem; }
+    #contain-input-details-start-button { height: 50px; font-size: 1rem; }
+    .slider-container { padding: 0; }
+    .pre-btn, .nxt-btn { display: none; }
+    .product-container { padding-left: 15px; }
+    .M_join_heading, .product-category { font-size: 1.5rem; }
+    .accordion-button { font-size: 1.125rem !important; }
+    .accordion-body { font-size: 1rem; }
+ }

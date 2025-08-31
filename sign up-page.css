@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.netflix-background-container{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("netflix-background-gs7hjuwvv2g0e9fj.jpg");
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+.nav-container{
+    padding: 10px 0;
+}
+.nav-logo{
+    height: auto;
+    width: 150px;
+    margin-left: 40px;
+}
+.sign-up-page-container{
+    background-color:rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 450px;
+    margin: 20px;
+    padding: 60px 68px;
+}
+.signup-heading{
+    font-size:32px;
+    font-weight:bold;
+    background: linear-gradient(to right,rgb(8, 211, 201),rgb(255, 0, 234),red,green);
+    background-clip: text;
+    color: transparent;
+}
+.form-control {
+    background-color: #333;
+    border: 1px solid #333;
+    color: white;
+    height: 50px;
+    border-radius: 4px;
+}
+.form-control:focus {
+    background-color: #444;
+    border-color: #fff;
+    color: white;
+    box-shadow: none;
+}
+.form-control::placeholder {
+    color: #8c8c8c;
+}
+
+.signup-button, .signup-button-2 {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: none;
+}
+.signup-button {
+    background-color: #e50914;
+    color: white;
+}
+.signup-p-or{
+    text-align: center;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+.signup-button-2{
+    background-color: rgba(203, 197, 197, 0.3);
+    color: white;
+}
+.sign-fp{
+    text-align: center;
+    margin-top: 10px;
+}
+.signup-fp-a{
+    color: #b3b3b3;
+    text-decoration: none;
+}
+.signup-fp-a:hover{
+    text-decoration: underline;
+}
+.form-check-label {
+    color: #b3b3b3;
+}
+.signup-p-upder{
+    color: #737373;
+    font-size: 16px;
+}
+.signup-a-upder{
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+.signup-a-upder:hover{
+    text-decoration: underline;
+}
+.signup-p-upder-2{
+    font-size: 13px;
+    color: #8c8c8c;
+}
+.signup-p-upder-2 a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.netflix-footer-section{
+    background-color: rgba(0,0,0,0.75);
+    padding: 50px 0;
+    font-size: 1em;
+    color: #737373;
+}
+.footer-paragraph{
+    margin-left: 15px;
+}
+.callno, .callno1 {
+    color: #737373;
+    text-decoration: none;
+}
+.callno:hover, .callno1:hover {
+    text-decoration: underline;
+}
+.callno1 {
+    font-size: 13px;
+}
+#language-selection{
+    background-color: #000;
+    border: 1px solid #333;
+    color: #999;
+    padding: 12px 20px;
+    border-radius: 2px;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+    .netflix-background-container {
+        background-image: none;
+    }
+    .sign-up-page-container {
+        padding: 20px;
+        margin: 0;
+        background-color: black;
+        max-width: 100%;
+    }
+    .nav-logo {
+        margin-left: 15px;
+        width: 100px;
+    }
+    .netflix-footer-section {
+        border-top: 1px solid #737373;
+    }
+}
