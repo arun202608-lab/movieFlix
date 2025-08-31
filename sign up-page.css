@@ -3,8 +3,8 @@ body {
     color: white;
 }
 
-.netflix-background-container{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("netflix-background-gs7hjuwvv2g0e9fj.jpg");
+.stream-background-container{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("movieflix-back.jpg");
     background-size: cover;
     background-position: center;
     width:100%;
@@ -108,7 +108,7 @@ body {
     text-decoration: none;
 }
 
-.netflix-footer-section{
+.stream-footer-section{
     background-color: rgba(0,0,0,0.75);
     padding: 50px 0;
     font-size: 1em;
@@ -135,9 +135,8 @@ body {
     border-radius: 2px;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
 @media (max-width: 768px) {
-    .netflix-background-container {
+    .stream-background-container {
         background-image: none;
     }
     .sign-up-page-container {
@@ -150,7 +149,8 @@ body {
         margin-left: 15px;
         width: 100px;
     }
-    .netflix-footer-section {
+    .stream-footer-section {
         border-top: 1px solid #737373;
     }
 }
+
